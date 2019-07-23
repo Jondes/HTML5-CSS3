@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>ImageGallery-JS</title>
+</head>
+
+<body>
+    <div id="img-box" class="small">
+        <div class="shadow1"></div>
+        <div class="shadow2"></div>
+
+        <img src="gallery/8.jpg" id="smallimg">
+    </div>
+
+    <div class="imageList">
+        <ul>
+            <li onclick="onWebsite()">WEBSITE</li>
+            <li onclick="onMobileApp()">MOBILE APP</li>
+            <li onclick="onMarketing()">MARKETING</li>
+            <li onclick="onSoftware()">SOFTWARE</li>
+        </ul>
+    </div>
+    <div class="btn-box" onclick="imageSize()">
+        <span id="btnIcon">&#9776;</span>
+    </div>
+    <script>
+        var smallimg = document.getElementById("smallimg");
+        var imgBox = document.getElementById("img-box");
+        var menuIcon = document.getElementById("btnIcon");
+
+        function onWebsite() {
+            smallimg.src = "gallery/8.jpg";
+        }
+
+        function onMobileApp() {
+            smallimg.src = "gallery/birdeye.jpg";
+        }
+
+        function onMarketing() {
+            smallimg.src = "gallery/AlaskaWhite.png";
+        }
+
+        function onSoftware() {
+            smallimg.src = "gallery/balls.jpg ";
+        }
+
+        function imageSize() {
+            if (imgBox.className == "small") {
+                imgBox.className = "full";
+            } else {
+                imgBox.className = "small";
+            }
+        }
+    </script>
+</body>
+
+</html>
