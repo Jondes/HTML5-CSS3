@@ -1,0 +1,18 @@
+body{
+    background-color: #13113a;
+    padding: 15px;
+    margin: 0;
+}
+p{
+    color: #adadad;
+    font-family: 'Work Sans',sans-serif;
+    font-size: 20px;
+    text-align: justify;
+    line-height: 35px;
+    -webkit-columns: 250px 3;
+    -moz-columns: 250px 3;
+    columns: 250px 3;
+    -webkit-column-gap: 40px;
+    -moz-column-gap: 40px;
+    column-gap: 40px;
+}
